@@ -12,14 +12,14 @@ Soporte Oficial: [@lacasadeltruco](https://t.me/lacasadeltruco)
 ### Opción 1: Con Sileo / Zebra (Jailbreak Dopamine / Palera1n / Checkra1n)
 1. Abre **Sileo** o **Zebra**.
 2. Ve a la pestaña **Fuentes (Sources)** -> Toca **+ (Añadir)**.
-3. Ingresa la URL de este repositorio en GitHub Pages:
+3. Ingresa la URL oficial de este repositorio:
    ```text
-   https://<tu-usuario>.github.io/<tu-repo>/
+   https://putoleo525-cell.github.io/chiv4c4m/
    ```
 4. Busca **ChivaCam Premium** e instálalo con 1 toque.
 
 ### Opción 2: Con TrollStore (Sin Jailbreak o Sideloading)
-- Descarga directamente el archivo [`ChivaCam_iOS_iPhone.ipa`](./ChivaCam_iOS_iPhone.ipa) y ábrelo con TrollStore.
+- Descarga directamente el archivo [`ChivaCam_iOS_iPhone.ipa`](https://putoleo525-cell.github.io/chiv4c4m/ChivaCam_iOS_iPhone.ipa) y ábrelo con TrollStore.
 
 ---
 
