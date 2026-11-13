@@ -1,0 +1,37 @@
+Package: com.darkbyte.chivacam.vcam
+Version: 2.1.0-chiva
+Architecture: iphoneos-arm64
+Maintainer: La Casa del Truco <@lacasadeltruco>
+Installed-Size: 1376
+Depends: mobilesubstrate | ellekit | substitute, firmware (>= 15.0), firmware (<< 18.0)
+Conflicts: com.local.vcameracrack, com.qianmian.vcam
+Replaces: com.local.vcameracrack, com.qianmian.vcam
+Provides: com.local.vcameracrack, com.qianmian.vcam
+Filename: debs/ChivaCam_iOS_VCam_Rootless_ES.deb
+Size: 107026
+MD5sum: 74ea1a6e67afd6494fbe23dbad064c8d
+SHA1: 0ff2840aee8d2be1a985b95ce6743bf7237dbad3
+SHA256: eb066e935f41452144bf28117ce9647859a70d7de985d30d3abf25ee667c2831
+Section: Tweaks
+Description: ChivaCam Premium Virtual Camera para iPhone • Edicion La Casa del Truco • darkbyte (@lacasadeltruco) con capsula flotante, zoom +/-10% y play/pause.
+Author: darkbyte • La Casa del Truco (@lacasadeltruco)
+Name: ChivaCam Premium — VCAM (Rootless)
+
+Package: com.darkbyte.chivacam.vcam
+Version: 2.1.0-chiva
+Architecture: iphoneos-arm
+Maintainer: La Casa del Truco <@lacasadeltruco>
+Installed-Size: 1376
+Depends: mobilesubstrate | ellekit | substitute, firmware (>= 13.0), firmware (<< 17.0)
+Conflicts: com.local.vcameracrack, com.qianmian.vcam
+Replaces: com.local.vcameracrack, com.qianmian.vcam
+Provides: com.local.vcameracrack, com.qianmian.vcam
+Filename: debs/ChivaCam_iOS_VCam_Rootful_ES.deb
+Size: 106990
+MD5sum: f7237681a8d1e9b3258d83555032ac82
+SHA1: 839e262e04d071880745f18ba6cf0b6a8235fd6f
+SHA256: 67f4398df38522eaa7d439831f32197ce57cf77e5578cea851fea641ac247e58
+Section: Tweaks
+Description: ChivaCam Premium Virtual Camera para iPhone • Edicion La Casa del Truco • darkbyte (@lacasadeltruco) con capsula flotante, zoom +/-10% y play/pause.
+Author: darkbyte • La Casa del Truco (@lacasadeltruco)
+Name: ChivaCam Premium — VCAM (Rootful)

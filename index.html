@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ChivaCam Premium iOS • La Casa del Truco</title>
+    <link rel="icon" type="image/png" href="CydiaIcon.png">
+    <style>
+        :root {
+            --bg-obsidian: #07070C;
+            --bg-card: #161221;
+            --bg-card-sub: #0E0C17;
+            --neon-crimson: #FF1744;
+            --neon-rose: #FF4D6D;
+            --emerald-green: #34D399;
+            --text-main: #FFFFFF;
+            --text-sub: #A0A0B0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            background-color: var(--bg-obsidian);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 16px 40px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .header-card {
+            background: linear-gradient(180deg, #1C152B 0%, var(--bg-card) 100%);
+            border: 2px solid var(--neon-crimson);
+            border-radius: 22px;
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 23, 68, 0.25);
+        }
+        .logo-wrap {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 14px;
+            border-radius: 24px;
+            background: #000;
+            border: 2px solid var(--neon-crimson);
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(255, 23, 68, 0.4);
+        }
+        .logo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 18px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: #FFF;
+            margin-bottom: 4px;
+        }
+        .sub-tag {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--neon-rose);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .desc {
+            font-size: 13.5px;
+            color: var(--text-sub);
+            line-height: 1.5;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1.5px solid rgba(255, 23, 68, 0.5);
+            border-radius: 18px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--neon-crimson);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #FF1744 0%, #D50000 100%);
+            color: #FFF;
+            box-shadow: 0 4px 15px rgba(255, 23, 68, 0.35);
+        }
+        .btn-secondary {
+            background: #251D36;
+            color: #FFF;
+            border: 1px solid rgba(255, 23, 68, 0.4);
+        }
+        .btn-emerald {
+            background: #112A22;
+            color: var(--emerald-green);
+            border: 1.5px solid var(--emerald-green);
+        }
+        .copy-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card-sub);
+            border: 1px solid rgba(255, 23, 68, 0.3);
+            border-radius: 12px;
+            padding: 10px 14px;
+            gap: 10px;
+        }
+        .copy-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #FFF;
+            font-size: 13px;
+            font-family: monospace;
+            outline: none;
+        }
+        .copy-btn {
+            background: var(--neon-crimson);
+            color: #FFF;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+            color: #E2E2EA;
+        }
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .feature-list li span {
+            color: var(--neon-crimson);
+            font-weight: 700;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #7A7A8C;
+            margin-top: 10px;
+        }
+        .footer a {
+            color: var(--neon-rose);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header-card">
+        <div class="logo-wrap">
+            <img src="CydiaIcon.png" alt="ChivaCam Logo">
+        </div>
+        <h1>CHIVACAM PREMIUM</h1>
+        <div class="sub-tag">La Casa del Truco • iOS Edition</div>
+        <p class="desc">
+            Cámara Virtual (VCAM) de bajo nivel con cápsula flotante interactiva, botones de Zoom directo ±10% y control total sin menús.
+        </p>
+    </div>
+
+    <!-- Quick Add to Package Managers -->
+    <div class="card">
+        <div class="card-title">⚡ Instalación en 1 Toque (iPhone)</div>
+        <a id="btnSileo" href="#" class="btn btn-primary">
+            <span>⚡</span> Añadir Fuente a Sileo
+        </a>
+        <a id="btnZebra" href="#" class="btn btn-secondary">
+            <span>🦓</span> Añadir Fuente a Zebra
+        </a>
+        <div class="copy-box">
+            <input type="text" id="repoUrl" class="copy-input" readonly value="">
+            <button class="copy-btn" onclick="copyRepoUrl()">Copiar URL</button>
+        </div>
+    </div>
+
+    <!-- TrollStore IPA Direct Download -->
+    <div class="card">
+        <div class="card-title">📱 TrollStore / Sideloadly / AltStore</div>
+        <p class="desc" style="font-size: 12.5px;">Para instalar la aplicación sin Jailbreak o con TrollStore permanente:</p>
+        <a href="ChivaCam_iOS_iPhone.ipa" class="btn btn-emerald" download>
+            <span>📦</span> Descargar ChivaCam_iOS_iPhone.ipa
+        </a>
+    </div>
+
+    <!-- Direct DEBs -->
+    <div class="card">
+        <div class="card-title">📥 Descargas Directas (.DEB)</div>
+        <a href="debs/ChivaCam_iOS_VCam_Rootless_ES.deb" class="btn btn-secondary" download>
+            <span>🔹</span> DEB Rootless (Dopamine / Palera1n iOS 15-17)
+        </a>
+        <a href="debs/ChivaCam_iOS_VCam_Rootful_ES.deb" class="btn btn-secondary" download>
+            <span>🔸</span> DEB Rootful (Checkra1n / Unc0ver iOS 13-16)
+        </a>
+    </div>
+
+    <!-- What's New in v2.1.0 -->
+    <div class="card">
+        <div class="card-title">✨ Novedades v2.1.0-chiva</div>
+        <ul class="feature-list">
+            <li><span>●</span> <b>Cápsula Flotante Activa:</b> Se activa de inmediato al tocar la app.</li>
+            <li><span>●</span> <b>Controles Directos en Pantalla:</b> Botones <b>[ - ]</b> Alejar 10%, <b>[ 📷 % ]</b> Menú y <b>[ + ]</b> Acercar 10%.</li>
+            <li><span>●</span> <b>Botón [ ▶ / ⏸ ]:</b> Transmisión en vivo sin abrir menús.</li>
+            <li><span>●</span> <b>Colores Cyber-Obsidian & Neon-Crimson:</b> Idénticos a Android.</li>
+            <li><span>●</span> <b>Soporte VIP Oficial:</b> Directo con La Casa del Truco.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Desarrollado por <b>darkbyte</b> • <b>cabimas.rar</b><br>
+        Soporte VIP Telegram: <a href="https://t.me/lacasadeltruco" target="_blank">@lacasadeltruco</a>
+    </div>
+</div>
+
+<script>
+    const currentUrl = window.location.href.split('#')[0].split('?')[0];
+    const baseUrl = currentUrl.endsWith('/') ? currentUrl : currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
+    
+    document.getElementById('repoUrl').value = baseUrl;
+    document.getElementById('btnSileo').href = 'sileo://source/' + encodeURIComponent(baseUrl);
+    document.getElementById('btnZebra').href = 'zbra://sources/add/' + encodeURIComponent(baseUrl);
+
+    function copyRepoUrl() {
+        const input = document.getElementById('repoUrl');
+        input.select();
+        input.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(input.value).then(() => {
+            alert('¡Enlace de la fuente copiado al portapapeles!\n\nPégalo en Sileo -> Fuentes -> +');
+        }).catch(() => {
+            alert('Copia este enlace: ' + input.value);
+        });
+    }
+</script>
+
+</body>
+</html>

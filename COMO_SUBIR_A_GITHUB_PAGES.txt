@@ -1,0 +1,20 @@
+COMO CREAR TU PROPIO LINK DE SILEO GRATIS (GITHUB PAGES) EN 2 MINUTOS:
+=====================================================================
+
+1. Entra a tu cuenta en https://github.com
+2. Crea un repositorio nuevo público (por ejemplo: "chivacam-repo").
+3. Sube los archivos que están en esta carpeta:
+   - debs/ (con los archivos .deb)
+   - Packages
+   - Packages.bz2
+   - Packages.gz
+   - Packages.xz
+   - Release
+   - sileo.json
+   - CydiaIcon.png
+
+4. En GitHub ve a: Settings -> Pages -> Source: Selecciona "Deploy from a branch" (main / root) -> Save.
+5. GitHub te dará un link https como:
+   https://tu_usuario.github.io/chivacam-repo/
+
+¡Y listo! Cualquier persona en el mundo con Dopamine o Sileo solo añade ese link a sus Fuentes (Sources) y se le instala ChivaCam con 1 solo toque.

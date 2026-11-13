@@ -1,0 +1,23 @@
+Origin: ChivaCam Premium Repo
+Label: ChivaCam Repo • La Casa del Truco
+Suite: stable
+Version: 2.1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: Repositorio Oficial ChivaCam Premium para Dopamine, Palera1n, Checkra1n y Sileo (La Casa del Truco • darkbyte)
+MD5Sum:
+ 0b34373573733267ff06d8da3aa12dce 1807 Packages
+ 2cb7c57d60ba53bfc41c278cabe84cfc 695 Packages.gz
+ 6cdf6aa80d9e4b51d30b219b3667d4e4 849 Packages.bz2
+ 7d098b3da81906ef21c749bfa9a3f5c2 740 Packages.xz
+SHA1:
+ 4f1e3af620b3bf8edd61ffb1f457ef98e310f2d9 1807 Packages
+ 86174abcfe12dbb174b40012266d9c1fb1617e01 695 Packages.gz
+ 926c55c592259b61804f4e655a8c0d2ca212888b 849 Packages.bz2
+ 3a2b2fae18d2f36b463e333a6d8f4d6893629565 740 Packages.xz
+SHA256:
+ 82c615b3ff437d378d90d07db06d631455b9fa6ba2dd78d42c360e8b2737b106 1807 Packages
+ 469ab1e1d2af4991cca25fdb6652cd13f02223332538d0ac789efabcfc69254a 695 Packages.gz
+ a3180e54236cc856b951957f886e84f0ab39f0ebcf99e4e5c31bc0dec0572e86 849 Packages.bz2
+ bbcbf7a0033fcd0ee268533ed4d2e9b556aa00c959824ebd3e3782205297d48c 740 Packages.xz
